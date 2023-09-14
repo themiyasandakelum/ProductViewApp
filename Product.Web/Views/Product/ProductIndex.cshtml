@@ -1,0 +1,60 @@
+﻿@model IEnumerable<ProductDto>
+
+<div class="card shadow border-2 mt-4">
+    <div class="card-header bg-primary bg-gradient ml-0 py-3">
+        <div class="row">
+            <div class="col-12 text-lg-center text-black">
+                <h2>Products</h2>
+            </div>
+        </div>
+    </div>
+    <div class="card-body p-4">
+        <div class="row pb-3">
+            <div class="col-6">
+                <a class="text-black">Manage & Add New Product</a>
+            </div>
+            <div class="col-6 text-end">
+                <a asp-action="ProductCreate" class="btn btn-outline-success"><i class="bi bi-plus-square"></i>Create New</a>
+            </div>
+        </div>
+        <table class="table table-success table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">Active</th>
+                    <th scope="col">Product Name</th>
+                    <th scope="col">SKU</th>
+                    <th scope="col">Created</th>
+                    <th scope="col">Retail Price</th>
+                    <th scope="col">Sale Price</th>
+                    <th scope="col">Lowest Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach(var item in Model)
+                {
+                    <tr>
+                        <td @item.Status>
+                            <!-- Default switch -->
+                            <input type="checkbox" checked data-toggle="toggle" data-onstyle="danger">
+                        </td>
+                        <td>@item.ProductName</td>
+                        <td>@item.SKU</td>
+                        <td>@item.CreatedDate</td>
+                        <td>@((item.RetailPrice).ToString("c"))</td>
+                        <td>@((item.SalePrice).ToString("c"))</td>
+                        <td>@((item.LowestPrice).ToString("c"))</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+   
+</div>
+<script>
+    $(function () {
+        $('#toggle-two').bootstrapToggle({
+            on: 'Enabled',
+            off: 'Disabled'
+        });
+    })
+</script>

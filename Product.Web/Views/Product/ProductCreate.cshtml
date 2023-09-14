@@ -1,0 +1,54 @@
+﻿@model ProductDto
+<form asp-action="ProductCreate">
+    <br/>
+    <div class="container border p-3">
+        <h1 class="text-black text-center">Create Product </h1>
+        <hr/>
+        <div class="row">
+            <div class="col-2">
+                <label class="control-label pt-2" style="font-size:20px;">Product Name</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="ProductName" class="form-control"/>
+                <span asp-validation-for="ProductName" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label class="control-label pt-2" style="font-size:20px;">SKU</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="SKU" class="form-control" />
+                <span asp-validation-for="SKU" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label class="control-label pt-2" style="font-size:20px;">Retail Price</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="RetailPrice" class="form-control" />
+                <span asp-validation-for="RetailPrice" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label class="control-label pt-2" style="font-size:20px;">Sale Price</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="SalePrice" class="form-control" />
+                <span asp-validation-for="SalePrice" class="text-danger"></span>
+            </div>
+            <div class="col-2">
+                <label class="control-label pt-2" style="font-size:20px;">Lowest Price</label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="LowestPrice" class="form-control" />
+                <span asp-validation-for="LowestPrice" class="text-danger"></span>
+            </div>
+            <div class="col-5 offset-2">
+                <a asp-action="ProductIndex" class="btn-primary btn form-control">Back to List</a>
+            </div>
+            <div class="col-5">
+                <input type="submit" value="Create" class="btn-success btn form-control"/>
+            </div>
+        </div>
+    </div>
+</form>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}
