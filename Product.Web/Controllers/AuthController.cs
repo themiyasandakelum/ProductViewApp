@@ -53,7 +53,7 @@ namespace Product.Web.Controllers
             }
             else
             {
-                ModelState.AddModelError("Custom Error", responseDto.Message);
+                TempData["error"] = responseDto.Message;
                 return View(obj);
             }
             
@@ -67,6 +67,10 @@ namespace Product.Web.Controllers
             {
                 TempData["success"] = "Rgistration Successful";
                 return RedirectToAction(nameof(Login));
+            }
+            else
+            {
+                TempData["error"] = result.Message;
             }
             return View(obj);
         }

@@ -150,3 +150,4 @@ C:\Users\Themiya\Documents\.netcourse\ProductView\ProductApi\obj\Debug\net8.0\re
 C:\Users\Themiya\Documents\.netcourse\ProductView\ProductApi\obj\Debug\net8.0\ProductApi.pdb
 C:\Users\Themiya\Documents\.netcourse\ProductView\ProductApi\obj\Debug\net8.0\ProductApi.genruntimeconfig.cache
 C:\Users\Themiya\Documents\.netcourse\ProductView\ProductApi\obj\Debug\net8.0\ref\ProductApi.dll
+C:\Users\Themiya\Documents\.netcourse\ProductView\ProductApi\obj\Debug\net8.0\ProductApi.sourcelink.json

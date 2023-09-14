@@ -19,7 +19,7 @@ namespace Product.Web.Service
                 ApiType = SD.ApiType.POST,
                 Data = loginRequestDto,
                 Url = SD.AuthAPIBase + "/api/AuthAPI/login"
-            });
+            },withBearer: false);
         }
 
         public async Task<ResponseDto?> RegisterAsync(RegistrationRequestDto registrationRequestDto)
@@ -29,7 +29,7 @@ namespace Product.Web.Service
                 ApiType = SD.ApiType.POST,
                 Data = registrationRequestDto,
                 Url = SD.AuthAPIBase + "/api/AuthAPI/register"
-            });
+            },withBearer:false);
         }
     }
 }

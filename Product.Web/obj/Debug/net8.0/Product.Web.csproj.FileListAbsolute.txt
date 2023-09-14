@@ -52,3 +52,4 @@ C:\Users\Themiya\Documents\.netcourse\ProductView\Product.Web\bin\Debug\net8.0\M
 C:\Users\Themiya\Documents\.netcourse\ProductView\Product.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
 C:\Users\Themiya\Documents\.netcourse\ProductView\Product.Web\bin\Debug\net8.0\Microsoft.IdentityModel.Tokens.dll
 C:\Users\Themiya\Documents\.netcourse\ProductView\Product.Web\bin\Debug\net8.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\Themiya\Documents\.netcourse\ProductView\Product.Web\obj\Debug\net8.0\Product.Web.sourcelink.json
